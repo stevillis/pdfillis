@@ -3,4 +3,5 @@
 from pdfillis import PDFillis
 
 if __name__ == "__main__":
-    PDFillis().run()
+    app = PDFillis()
+    app.run()
