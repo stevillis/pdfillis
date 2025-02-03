@@ -1,35 +1,35 @@
 # PDFillis
 
-A PDF Merge tool build with PyMuPDF and Tkinter.
+A PDF Merge tool built with PyMuPDF and Streamlit.
 
-This tool allows you to select the PDF files you want to merge and combine them into a single PDF file, in the same order the files were selected.
+This tool allows you to select multiple PDF files and combine them into a single PDF file. The merged PDF will maintain the order in which the files were selected.
 
-## Current Features
-- The user can select only PDF files to be merged
-- The user can select where the merged file will be saved
+## Features
+- Upload multiple PDF files simultaneously
+- Preview of selected files
+- Download the merged PDF file
+- Simple and intuitive web interface
 
-![PDFillis - Initial screen](images/initial_screen.png)
-![PDFillis - Selecting files to merge](images/selected_files.png)
-![PDFillis - Successfully merge](images/merge_completed.png)
+![PDFillis - Web Interface](images/pdfillis.png)
 
 ## Running the App locally
-You must have Python installed on your machine, since this App was created using the `Python 3.11`. To run it in other Python you should check the compatibility.
 
-1. After cloning this repo or downloading the ZIP file with this repo code, you must run:
+You must have Python installed on your machine. This app was developed using `Python 3.11`, but it should be compatible with other Python 3.x versions.
+
+1. After cloning this repo or downloading the ZIP file, install the dependencies:
     ```shell
     pip install -r requirements.txt
     ```
-    to install the project dependencies, which has only `PyMuPDF`.
+    This will install the required packages: `PyMuPDF` and `streamlit`.
 
-2. To run the App, you just need to call the ```main.py``` file:
+2. To run the App:
     ```shell
-    python main.py
+    streamlit run main.py
     ```
+    The app will open in your default web browser.
 
-
-## Next Features
-- Allow the user to unselect PDF files
-- Allow the user to change the order of the selected PDF files
-- Allow multiple files selection at once
-- Exception handling
-- Create a `.exe` file, so the user doesn't need to have Python installed to run the App
+## Current Features
+- Upload multiple PDF files at once
+- Combine PDFs with a single click
+- Download the merged PDF file
+- Visual feedback for successful operations and errors
