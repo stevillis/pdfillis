@@ -25,6 +25,9 @@ class PDFillis:
             "Escolher arquivos", type="pdf", accept_multiple_files=True
         )
 
+        if uploaded_files:
+            st.session_state.selected_files = uploaded_files
+
         if st.button("Combinar PDFs", type="primary"):
             self.merge_pdf()
 
